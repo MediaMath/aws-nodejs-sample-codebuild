@@ -38,5 +38,6 @@ artifacts:
     - node_modules/query-string/**/*
     - node_modules/request/**/*
     - node_modules/request-debug/**/*
+    - node_modules/simple-oauth2/**/*
     - node_modules/simple-rate-limiter/**/*
     - node_modules/terminalone/**/*
