@@ -34,9 +34,9 @@ var server = http.createServer(function (req, res) {
             if (req.url === '/') {
                 log('Received message: ' + body);
             } else if (req.url = '/scheduledReadonlyMode') {
-                scheduledReadonlyMode();
+                scheduledReadonlyMode(req, res);
             } else if (req.url = '/scheduledUpdateMode') {
-                scheduledUpdateMode();
+                scheduledUpdateMode(req, res);
             }
 
             res.writeHead(200, 'OK', {'Content-Type': 'text/plain'});
