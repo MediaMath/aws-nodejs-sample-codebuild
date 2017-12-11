@@ -34,7 +34,6 @@ let scheduled = function(readonlyMode, req, res) {
                 .invokeAsync(params)
                 .promise()
                 .then((data) => console.log("Recursed."));*/
-            //const techsol_config_json = JSON.parse(techsol_config_str);
             const techsol_config_json = {
               name: "ts-autotagcreatives-codebuild",
               client: "Quotient",
