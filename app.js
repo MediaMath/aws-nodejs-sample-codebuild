@@ -16,6 +16,7 @@ let scheduledUpdateMode = function(req, res) {
 }
 
 let scheduled = function(readonlyMode, req, res) {
+    log(readonlyMode + ':' + req + ':' + res);
     log('Mode:' + readonlyMode + 
         ', Received task ' + req.headers['x-aws-sqsd-taskname'] + 
         ' scheduled at ' + req.headers['x-aws-sqsd-scheduled-at']);
