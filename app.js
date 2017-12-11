@@ -7,15 +7,15 @@ var log = function(entry) {
     fs.appendFileSync('/tmp/sample-app.log', new Date().toISOString() + ' - ' + entry + '\n');
 };
 
-let scheduledReadonlyMode = function() {
-    return scheduled(true);
+let scheduledReadonlyMode = function(req, res) {
+    return scheduled(true, req, res);
 }
 
-let scheduledUpdateMode = function() {
-    return scheduled(false);
+let scheduledUpdateMode = function(req, res) {
+    return scheduled(false, req, res);
 }
 
-let scheduled = function(readonlyMode) {
+let scheduled = function(readonlyMode, req, res) {
     log('Mode:' + readonlyMode + 
         ', Received task ' + req.headers['x-aws-sqsd-taskname'] + 
         ' scheduled at ' + req.headers['x-aws-sqsd-scheduled-at']);
