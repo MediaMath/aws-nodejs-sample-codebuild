@@ -5,4 +5,4 @@ cron:
     schedule: "*/2 * * * *"
   - name: "update"
     url: "/scheduledUpdateMode"
-    schedule: "*/5 * * * *"
+    schedule: "*/10 * * * *"

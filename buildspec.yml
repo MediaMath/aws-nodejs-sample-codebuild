@@ -10,7 +10,6 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm install
-      - npm install unit.js
   build:
     commands:
       - echo Build started on `date`
@@ -26,9 +25,17 @@ phases:
 artifacts:
   files:
     - app.js
+    - config.js
     - cron.yaml
     - index.html
     - package.json
+    - t1api.js
     - test.js
-    - node_modules/async/*
+    - node_modules/aws-sdk/*
     - node_modules/lodash/*
+    - node_modules/moment/*
+    - node_modules/query-string/*
+    - node_modules/request/*
+    - node_modules/request-debug/*
+    - node_modules/simple-rate-limiter/*
+    - node_modules/terminalone/*
