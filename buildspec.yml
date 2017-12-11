@@ -26,7 +26,9 @@ phases:
 artifacts:
   files:
     - app.js
+    - cron.yaml
     - index.html
     - package.json
+    - test.js
     - node_modules/async/*
     - node_modules/lodash/*
