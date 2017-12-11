@@ -1,0 +1,8 @@
+version: 1
+cron: 
+  - name: "readonly"
+    url: "/scheduledReadonlyMode"
+    schedule: "*/2 * * * *"
+  - name: "update"
+    url: "/scheduledUpdateMode"
+    schedule: "*/5 * * * *"

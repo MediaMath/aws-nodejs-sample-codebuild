@@ -1,6 +1,14 @@
 # Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
 version: 0.2
 
+env:
+  variables:
+     key: "value"
+     # key: "value"
+  parameter-store:
+     key: "value"
+     # key: "value"
+
 phases:
   install:
     commands:
